@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Project Explorer App</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
+                    <a class="navbar-brand" href="index.html">Project Explorer</a>
+                    <form name="searchForm" class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search Projects" aria-label="Search">
+                        <button class="btn btn-outline-light mr-sm-2 my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="createproject.html">Submit</a>
+                        </li>
+                    </ul>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                          <li class="nav-item">
+                             <a class="nav-link" href="register.html">Signup</a>
+                          </li>
+                          <li class="nav-item">
+                             <a class="nav-link" href="login.html">Login</a>
+                          </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    <br><br><br><br>
+
+        <main>
+            <div class="container mx-auto w-50 p-3">
+                <h2>Submit Project</h2>
+                <form name="submitProject">
+                    <div class="form-group">
+                        <label class="form-label">Project Name:</label>
+                        <input class="form-control" type="text" name="name" placeholder="Enter project name">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Project Abstract:</label>
+                        <textarea class="form-control" type="text" name="abstract"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Author(s):</label>
+                        <input class="form-control" type="text" name="authors" placeholder="Enter author names (seperated by comma)">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Tag(s):</label>
+                        <input class="form-control" type="text" name="tags" placeholder="Use # to tag project with different topics (e.g. #javascript #nanobot)">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Continue</button>
+                </form>
+            </div>
+        </main>
+        <br>
+        
+        <footer>
+            <div class="container mx-auto bg-light">
+                <p class="text-right my-3 py-3"><span class="text-muted">Project Explorer &copy; 2020 &middot;</span> Edconnect</p>
+            </div>
+        </footer>
+    </body>
+</html>

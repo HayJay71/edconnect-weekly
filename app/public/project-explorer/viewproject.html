@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Project Explorer App</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
+                    <a class="navbar-brand" href="index.html">Project Explorer</a>
+                    <form name="searchForm" class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search Projects" aria-label="Search">
+                        <button class="btn btn-outline-light mr-sm-2 my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="createproject.html">Submit</a>
+                        </li>
+                    </ul>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                          <li class="nav-item">
+                             <a class="nav-link" href="register.html">Signup</a>
+                          </li>
+                          <li class="nav-item">
+                             <a class="nav-link" href="login.html">Login</a>
+                          </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    <br><br><br><br>
+
+        <main>
+            <div class="container"><!--Project Summary-->
+                <h3 class="pb-2">Project 1</h3>
+                <div class="row mx-auto p-2 bg-light">
+                    <div class="col-md-3 pt-1">
+                        <p>Created By: <br>Hay Jay</p>
+                    </div>
+                    <div class="col-md-3 pt-1">
+                        <p>Date Created: <br>07-08-2021</p>
+                    </div>
+                    <div class="col-md-3 pt-1">
+                        <p>Last Updated: <br>07-08-2021</p>
+                    </div>
+                    <div class="col-md-3 pt-1">
+                        <div class="d-flex justify-content-end"><a href="editproject.html" class="btn btn-primary" role="button">Edit Project</a></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="container mx-auto pt-3">
+                <div class="form-row">
+                    <div class="col pr-3"><!--Project Abstract-->
+                        <h5>Project Abstract</h5>
+                        <hr>
+                        <form>
+                            <div class="form-group">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                    elit, sed do eiusmod tempor incididunt ut labore 
+                                    et dolore magna aliqua. Porta nibh venenatis cras 
+                                    sed felis. Egestas sed tempus urna et pharetra. 
+                                    Neque viverra justo nec ultrices dui sapien eget. 
+                                    Dignissim convallis aenean et tortor at risus viverra 
+                                    adipiscing. Pharetra et ultrices neque ornare. Tempor 
+                                    orci dapibus ultrices in iaculis. Enim eu turpis egestas 
+                                    pretium aenean pharetra magna ac. Augue ut lectus 
+                                    arcu bibendum at varius vel pharetra.
+                                </p>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label class="h5">Comments</label>
+                                <textarea class="form-control" type="text" name="abstract" placeholder="Leave a comment"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <hr>
+                            <p class="text-center">No comments added yet</p>
+                        </form>
+                    </div>
+                    <div class="col pl-3"><!--Project Details-->
+                        <h5>Project Details</h5>
+                        <hr>
+                        <form>
+                            <div class="form-group card">
+                                <div class="card-header">
+                                    <h5>Author(s)</h5>
+                                </div>
+                                <div class="card-body pt-2 pb-2">
+                                    <p class="card-text">Hay Jay</p>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <a href="#" class="card-link">#nanobot</a>
+                                </div>
+                            </div>
+                            <div class="form-group card">
+                                <div class="card-header">
+                                    <h5>Project Files</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text text-center">No file uploaded yet</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <br>
+        
+        <footer>
+            <div class="container mx-auto bg-light">
+                <p class="text-right my-3 py-3"><span class="text-muted">Project Explorer &copy; 2020 &middot;</span> Edconnect</p>
+            </div>
+        </footer>
+    </body>
+</html>
